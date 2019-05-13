@@ -1,0 +1,315 @@
+body { 
+    margin: 0;    
+    font-family: sans-serif;
+}
+.banner {
+    background-image: linear-gradient(
+      to right, rgba(0, 0, 0, 0.7), rgba(255, 255 ,255, 0.3)), url('./images/background.v1.jpg');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: auto;
+}
+.calendarArrows{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-flex;
+}
+.timeSlot{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.calendarArrows input{
+    width: 237px;
+    border-radius: 0px;
+}
+.calendarArrows a{
+    background-color: white;
+    border-radius: 0px;
+}
+.calendarArrows .glyphicon.focus{
+    color: #5ACBBE;
+    top: 2px;
+}
+.calendarArrows a:focus{
+    background-color: white;
+    border-radius: 0px;
+}
+#dropdownMenuLink {
+    border: 2px solid #5CABBE;
+    color: #5CABBE;
+    width: -webkit-fill-available;
+}
+.dropdown-item {    
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #5ACBBE;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-item:hover {
+text-decoration: none;
+}
+.nav-bar {
+    width: auto;
+}
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 5px 20px;
+}
+
+.header a {
+    float: left;
+    color: grey;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.heaeder button span {
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+}
+
+.header button {
+    margin: 12px 150px;
+    border-radius: 2em;
+}
+
+.header a:hover{
+text-decoration: none;
+}
+
+.header-left {
+    padding-left: 150px;
+    float: left;
+}
+.green-header, .green-footer {
+    height: 10px;
+    width: 100%;
+    background-color: #5ACBBE;
+}
+.footer {
+    position:fixed;
+    bottom:0px;
+    margin-bottom:0px;
+}
+
+.container-fluid .col1, .container-fluid .col2 {
+    column-gap: 20px;
+}
+.container-fluid .row {
+    margin: 120px 70px;
+}
+
+.col1 {
+    max-width: 70%;    
+}
+
+.col2 {
+    max-width: 40%;
+    margin-top: -80px;
+}
+
+.greetingdesc {
+    color: #f1f1f1;
+    letter-spacing: 7px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.clinicname h1{
+    color: #f1f1f1;
+    letter-spacing: 3px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.clinicdesc p {
+    color: #f1f1f1;
+}  
+  .bookApp.beforeClick{
+    padding-left: 12px;
+    padding-right: 12px;
+    color: lightgray; 
+    font-weight: 900; 
+    border-radius: 0;
+    background-color: white;
+  }
+  .bookApp.focus{
+    background-color: white;
+    color: #5ACBBE;
+    font-size: 12px;
+    font-weight: 900;
+    padding-left: 12px;
+    padding-right: 12px; 
+    border-radius: 0;
+    box-shadow: 1px 3px 0px 0px #5ACBBE;
+  }
+
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0;        
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        font-family: sans-serif;
+    }
+    .header a, .header button {
+        float: none;
+        display: block;
+        text-align: left;
+        font-size: 13px;
+    }
+    .body{
+        size: 100vw;
+    }
+    .col1 {
+        max-width: none;
+        padding-left: 60px;
+    }
+    .col2 {
+        max-width: none;
+        margin-top: 30px;
+    }
+    .container-fluid .row{
+        margin: auto;
+    }
+    .container-fluid {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .clinicdesc p {
+        padding-left: 20px;
+    }
+    .greetingdesc {
+        color: #f1f1f1;
+        letter-spacing: 4px;        
+        font-size: 12px;
+        font-weight: bolder;    
+        padding-left: 20px;
+    }
+    .clinicname h1{
+        color: #f1f1f1;
+        letter-spacing: 5px;
+        font-size: 30px;
+        padding-left: 20px;
+        font-weight: bold;
+    }
+    .header button {
+        margin: 0px;
+        border-radius: 2em;
+    }
+    .container .btn-group {
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        background-image: linear-gradient(
+          to right, rgba(0, 0, 0, 0.7), rgba(255, 255 ,255, 0.3)), url('./images/background800.jpg');
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        font-family: sans-serif;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+    .header a, .header button {
+      font-size: 13px;
+    }
+    .greetingdesc {
+        color: #f1f1f1;
+        letter-spacing: 3px;
+        font-size: 12px;
+        font-weight: bolder;        
+        padding-left: 20px;
+    }
+    .container-fluid {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .col2 {
+        max-width: none;
+        margin-top: 30px;
+    }
+    .clinicdesc p{
+        padding-left: 20px;
+    }
+    .header button {
+        margin: 0px;
+        border-radius: 2em;
+    }
+    .clinicname h1{
+        color: #f1f1f1;
+        letter-spacing: 5px;
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    .container .btn-group {
+        display: inline-flex;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        background-image: linear-gradient(
+          to right, rgba(0, 0, 0, 0.7), rgba(255, 255 ,255, 0.3)), url('./images/background1024.jpg');
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        font-family: sans-serif;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+    .header a, .header button {
+      font-size: 15px;
+    }
+    .col2 {
+        max-width: none;
+        margin-top: -90px;        
+    }
+    .greetingdesc {
+        color: #f1f1f1;
+        letter-spacing: 3px;
+        font-size: 12px;
+        font-weight: bolder;        
+        padding-left: 20px;
+    }
+    .container-fluid {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .clinicdesc p{
+        padding-left: 20px;
+    }
+    .header button {
+        margin: 0px;
+        border-radius: 2em;
+    }
+    .clinicname h1{
+        color: #f1f1f1;
+        letter-spacing: 5px;
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    .container .btn-group {
+        display: inline-flex;
+    }
+  }
